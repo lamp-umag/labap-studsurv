@@ -1,0 +1,41 @@
+pidn: Participant ID (unique sequential number).
+tstp: Timestamp of the response.
+plev: Participant's education level.
+psex: Participant's biological sex.
+  - 1 = Male
+  - 2 = Female
+  - 3 = Other
+psed: Participant's biological sex (dichotomized).
+  - 0 = Female or Other
+  - 1 = Male
+pgen: Participant's gender.
+  - 1 = Male
+  - 2 = Female
+  - 3 = Other
+pge2: Participant's combined sex and gender identity classification:
+  - 1 = Male cisgender (psex = 1 and pgen = Male)
+  - 2 = Female cisgender (psex = 0 and pgen = Female)
+  - 3 = Other or non-cisgender identities (e.g., mismatched sex and gender)
+pest: Participant's school or establishment.
+psne: Whether the participant has special educational needs.
+  - 0 = No
+  - 1 = Yes
+  
+reg1, reg2, reg3: Items about the region.
+reg1: "Ahora tengo más interés en el cuidado de mi región."
+reg2: "Aprendí cosas nuevas sobre el cuidado de mi región."
+reg3: "Me gustaría aprender más sobre el cuidado de mi región."
+lab1, lab2, lab3: Items related to the lab experience.
+lab1: "Me gustó venir al LabAp."
+lab2: "Hubiese preferido tener una clase normal."
+lab3: "Siento que la visita fue una pérdida de tiempo."
+- 5 = Muy de acuerdo
+- 4 = De acuerdo
+- 3 = Neutral
+- 2 = En desacuerdo
+- 1 = Muy en desacuerdo
+
+labc: positive lab experience mean composite score
+regc: positive att towards the region composite score
+labf: positive lab experience factor score
+regf: positive att towards the region factor score
