@@ -1,2 +1,2 @@
 # labap-studsurv
-Analysis of students surveys in LABAP
+Analysis of responses to survey for students visting the LABAP at UMAG.
