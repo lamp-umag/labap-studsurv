@@ -615,20 +615,16 @@ dev.off()
 
 # Create nice semPlot
 pdf("plot_cfa_.pdf", width = 10, height = 8)
-semPaths(fit, 
-         what = "std",  # Show standardized coefficients
-         edge.label.cex = 1.0,  # Size of edge labels
-         sizeMan = 10,  # Size of manifest variable nodes
-         sizeLat = 12,  # Size of latent variable nodes
-         edge.width = 1.5,  # Width of edges
-         edge.color = "darkblue",  # Color of edges
-         node.width = 2,  # Width of nodes
-         border.width = 2,  # Width of borders
-         layout = "tree2",  # Layout type
-         residuals = FALSE,  # Don't show residuals
-         style = "ram",  # RAM style notation
-         curve = 2,  # Curve factor for edges
-         nDigits = 2)  # Number of digits to display
+semPaths(fit, what="col", whatLabels = "std",
+         edge.label.cex = .8,nCharEdges=0,nCharNodes = 0,
+         structural=F,optimizeLatRes=F,
+         #style="mx",residuals = T,#residScale = 4,
+         layout="tree", rotation=2,
+         curvePivot = T,exoVar = F,intercepts = F,thresholds = F,
+         sizeLat = 7,sizeLat2 = 7,
+         sizeMan = 4,sizeMan2 = 1.75,
+         edge.width=4)
+
 
 # Add fit indices to plot
 fitind <- round(fitMeasures(fit, c("cfi", "tli", "rmsea", "srmr")), 3)
